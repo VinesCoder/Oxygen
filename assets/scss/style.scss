@@ -1,0 +1,88 @@
+@import "var";
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+//   line-height: 1.6;
+  color: $dark-clr;
+  overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.section__title{
+  padding: 15px 0;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.25;
+  letter-spacing: -1.65px;
+  color: $dark-clr;
+  position: relative;
+
+  &::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: $brand-clr;
+  }
+}
+
+@media (max-width:992px) {
+  .container{
+    padding:0 55px;
+  }
+  .section__title{
+    font-size: 50px;
+  }
+}
+@media (max-width:576px) {
+  .container{
+    padding:0 40px;
+  }
+  .section__title{
+    font-size: 36px;
+    padding: 10px 0;
+  }
+}
+
+
+
+@import "header";
+@import "nav";
+@import "about";
+@import "expertise";
+@import "progressbar";
+@import "vision";
+@import "portfolio";
+@import "gallery";
+@import "testimonials";
+@import "video";
+@import "facts";
+@import "features";
+@import "team";
+@import "pricing";
+@import "contact";
+@import "footer";
+

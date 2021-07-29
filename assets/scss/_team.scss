@@ -1,0 +1,50 @@
+.team{
+    padding: 120px 0 160px;
+
+    &__list{
+        list-style: none;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item{
+        margin: 15px;
+    }
+    &__img{
+        width: auto;
+        max-height: 440px;
+        object-fit: cover;
+    }
+    &__name{
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+    }
+    &__prof{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        color: #C2C2C2;
+    }
+}
+@media (max-width:992px) {
+    .team{
+        padding: 100px 0 120px;
+    }
+}
+@media (max-width:567px) {
+    .team{
+        padding: 85px 0 100px;
+
+        &__list{
+            margin-top: 60px;
+            flex-wrap: wrap;
+
+        }
+    }
+}

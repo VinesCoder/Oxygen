@@ -1,0 +1,50 @@
+.header{
+    height: 100vh;
+    background: url("../img/Header-bg.jpg")center center/cover no-repeat;
+    position: relative;
+
+    &__nav-inner{
+        padding: 0px 55px;
+        background: #fff;
+        position: fixed;
+        top: 0;left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+    &__title{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 1.2;
+        color: $light-clr;
+    }
+    &__discription{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 2.7px;
+        color: $brand-clr;
+    }
+    &__decor-img{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px){
+    .header__nav-inner{
+        padding: 10px 25px;
+    }
+}

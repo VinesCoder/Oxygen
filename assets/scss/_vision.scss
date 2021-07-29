@@ -1,0 +1,49 @@
+.vision{
+    display: flex;
+
+    &__picture{
+        width: 50%;
+    }
+    &__img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &__content{
+        width: 50%;
+        padding: 100px 135px;
+    }
+    &__text{
+        margin-top: 65px;
+    }
+    &__description{
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-gray-clr;
+    }
+}
+
+@media (max-width:992px) {
+    .vision{
+        flex-direction: column;
+
+        &__picture{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__img{
+            height: 600px;
+        }
+
+        &__content{
+            width: 100%;
+            padding: 40px 65px;
+        }
+        &__text{
+            margin-top: 35px;
+        }
+    }
+
+}

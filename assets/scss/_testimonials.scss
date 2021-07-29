@@ -1,0 +1,33 @@
+.testimonial{
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Merriweather;
+    font-style: italic;
+
+
+    &__comment{
+        display: block;
+        max-width: 650px;
+        margin-bottom: 50px;
+        padding: 0px 25px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    &__author{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 32px;
+        color: #9E9E9E;
+
+    }
+}
+@media (max-width:576px) {
+    .testimonial{
+        padding: 90px 0;
+    }
+}

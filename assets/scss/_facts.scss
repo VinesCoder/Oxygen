@@ -1,0 +1,43 @@
+.facts{
+    padding: 160px 0;
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__num{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 73px;
+    }
+    &__name{
+        font-family: Open Sans;
+        font-size: 14px;
+        line-height: 19px;
+        color: #00B2A0;
+    }
+}
+
+@media (max-width:576px) {
+    .facts{
+        padding: 100px 0;
+
+        &__list{
+            flex-wrap: wrap;
+        }
+        &__item{
+            margin: 10px 15px;
+        }
+        &__num{
+            font-size: 40px;
+            line-height: 65px;
+        }
+        &__name{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

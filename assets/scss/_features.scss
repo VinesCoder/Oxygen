@@ -1,0 +1,128 @@
+.features{
+  width: 100%;
+  background: $light-bg-clr;
+}
+.carousel{
+  padding: 250px 0;
+  position: relative;
+  overflow: hidden;
+
+
+  &__slider{
+    height: 100%;
+    width: 600%;
+    display: flex;
+    transition:all .54s linear;
+  }
+  &__slide{
+    flex-basis: 100%;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__slide-title{
+      max-width: 700px;
+      margin-bottom: 30px;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 52px;
+      color: $dark-clr;
+  }
+  &__slide-description{
+      max-width: 560px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      color: #777777;
+  }
+  &__arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &--prev{
+      left: 55px;
+    }
+    &--next{
+      right: 55px;
+    }
+
+    svg{
+      fill: $dark-clr;
+    }
+  }
+  &__dots{
+    list-style: none;
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__dot{
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $dark-clr;
+    opacity: .4;
+    transition: all .4s linear;
+  }
+  &__dot.active{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+}
+
+@media (max-width:576px){
+  .carousel{
+    padding: 120px 0;
+    text-align: center;
+
+    &__slide{
+      padding: 0 100px;
+    }
+
+    &__slide-title{
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    &__slide-description{
+      font-size: 12px;
+    }
+
+    &__arrow{
+      &--prev{
+        left: 25px;
+      }
+      &--next{
+        right: 25px;
+      }
+    }
+
+    &__dots{
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+@media (max-width:567px) {
+  .carousel{
+    padding-top: 90px;
+
+    &__slide-title{
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 15px;
+    }
+  }
+}
